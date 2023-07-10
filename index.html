@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto CoderHouse</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="telaPrincipal">
+    <div id="informacao" class="caixaDados">
+        <h1 class="titulo">Projeto Final - CODERHOUSE</h1>
+
+        <div>CID:</div>
+        <div>
+            <input type="text" name="cid_number" id="cid_number">
+        </div>
+
+        <div>Nome doença:</div>
+        <div>
+            <input type="text" id="id_desease" name="desease_name">
+        </div>
+
+        <div>Criticidade:</div>
+        <div>
+            <input type="number" id="id_criticidade" name="desease_name">
+        </div>
+
+        <div>Possui Tratamento? (Sim ou não)</div>
+        <div>
+            <input type="Text" id="id_tratamento" name="desease_name">
+        </div>
+
+        <div>
+            <fieldset id="campoSintomas" class="classSintomas">
+                <legend>Marque os sintomas</legend>
+                <div>
+                    <input type="checkbox" name="headache" id="i-headache">
+                    <label for="i-headache">Dor de Cabeça</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="feaver" id="i-feaver">
+                    <label for="i-feaver">Febre</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="chills" id="i-chills">
+                    <label for="i-chills">Calafrios</label>
+                </div>
+                
+            </fieldset>
+            
+        </div>
+    </div>
+    <div>
+        <p>
+            <button id="buttonCadastro" onclick="incluirDoenca()">Cadastrar</button>
+            <button id="buttonCadastro" onclick="listarDoencas()">Listar Doenças</button>
+        </p>
+    </div>
+    <div id="id_listaDoenca">
+        <h1>Listagem de doenças cadastradas</h1>
+    </div>
+        <script src="page.js"></script>
+    <footer>Entregue por Jorge Braz</footer>
+</body>
+</html>
